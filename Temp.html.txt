@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomshakalaka Baby</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #34495e;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+        }
+        section h2 {
+            font-size: 2em;
+        }
+        section p {
+            font-size: 1.2em;
+            margin: 0 20px;
+        }
+        footer {
+            background-color: #34495e;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #e67e22;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boomshakalaka Baby</h1>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Placeholder text about yourself or your profession.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Details about your projects will go here.</p>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Your blog posts will be displayed here.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact information or form will go here.</p>
+    </section>
+    <footer>
+        <button class="button" onclick="playSound('okay')">Okay</button>
+        <button class="button" onclick="playSound('alright')">Alright</button>
+    </footer>
+    <audio id="okay-sound" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/e/eb/Rammus.okay.ogg"></audio>
+    <audio id="alright-sound" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f2/Rammus.alright.ogg"></audio>
+    <script>
+        function playSound(sound) {
+            document.getElementById(sound + '-sound').play();
+        }
+    </script>
+</body>
+</html>
